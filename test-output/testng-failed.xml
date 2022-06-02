@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <parameter name="UserName" value="Arul"/>
+    <parameter name="URL" value="https://www.flipkart.com/"/>
+    <parameter name="Password" value="kannan"/>
+    <groups>
+      <run>
+        <exclude name=""/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.ecommerce.MobilePurchase">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="BeforeTest"/>
+          <include name="choose"/>
+          <include name="screenshot"/>
+          <include name="window"/>
+          <include name="AfterTest"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.ecommerce.MobilePurchase -->
+      <class name="com.ecommerce.TvPurchase">
+        <methods>
+          <include name="BeforeTest"/>
+          <include name="OpenBrowser"/>
+          <include name="AfterTest"/>
+          <include name="CloseBrowser"/>
+          <include name="choose"/>
+          <include name="screenshot"/>
+          <include name="window"/>
+        </methods>
+      </class> <!-- com.ecommerce.TvPurchase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
